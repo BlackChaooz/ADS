@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<style>
+    label{
+        display: inline-block;
+        width: 120px;
+    }
+</style>
+<body>
+    <div class="content">
+    <form action="">
+        <fieldset>
+            <legend>Formulário de inscrição</legend>
+            <div> 
+                <label for=""><b>Nome</b></label> 
+                <input type="text" name="Nome" value="Insira seu nome">
+                <p></p>
+            </div>
+                <label for=""><b>Sobrenome</b></label> 
+                <input type="text"  name="Sobrenome"value="Insira seu sobrenome">
+                <p></p>
+            <div>
+                <label for=""><b>Idade</b></label> 
+                <input type="number"  name="idade" min="18" max="120">
+                <p></p>
+            </div>
+                <label for=""><b>E-mail</b></label> 
+                <input type="text"  name="E-mail"value="Insira seu e-mail">
+                <p></p>
+            <div>
+                <label for="sexo"><b>Sexo</b></label>
+                <input type="radio" value="Masculino" id="Masculino" name="sexo" > <label for="radio">Masculino</label>
+                <input type="radio" value="Feminino" id="Feminino" name="sexo"> <label for="radio">Feminino</label>
+                <p></p>
+            </div>
+            <div>
+                <label for=""><b>Foto</b></label>
+                <input type="file" value="Choose File" accept="file_extension|.jpeg|.png" >
+                <p></p>
+            </div>
+            <div>
+                <label for=""><b>País</b></label>
+                <select name="">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Peru">Peru</option>
+                </select>
+                <p></p>
+            </div>
+            <div>
+                <label for=""><b>As linguagens <br> que você prefere?</b></label>
+                <select name="" size="4" multiple>
+                    <option value="Java">Java</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                </select>
+                    <label for="">(Para fazer várias escolhas,  mantenha a tecla CTRL pressionada)</label>
+            
+            </div>
+            <div>
+                <br>
+                <label for=""><b>Áreas de Atuação</b></label>
+                <input type="checkbox">
+                <label for="Computação">Computação</label>
+                <input type="checkbox">
+                <label for="Computação">Gestão</label>
+                <input type="checkbox" > 
+                <label for="Pedagogia">Pedagogia</label>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+            
+            
+        </fieldset>
+
+    </form>
+</div>
+</body>
+</html>
